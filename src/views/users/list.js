@@ -4,6 +4,7 @@ import axios from 'axios';
 import * as CONFIG  from '../../config';
 import { Link } from 'react-router-dom';
 // DOM COMPONENTS
+import $ from 'jquery';
 import { TweenMax, Elastic } from 'gsap';
 import { ListGroup,ListGroupItem } from 'react-bootstrap';
 const duration = 0.5;
@@ -58,31 +59,13 @@ class UsersList extends Component {
         })
        
       }
-      animate(){
-        const userslist = document.querySelectorAll('.userItem');
-        
-        console.log(userslist);
-        
-          for(var i = 0; i < userslist.length; i++){
-              var item = userslist[i];
-              this.show(userslist[i].getAttribute("id"),userslist[i].getAttribute("id"))
-          }
-      }
+     
       componentDidMount() {
-        this.getusers();   
-        setTimeout(this.animate(), 500);     
+        this.getusers();    
       }
       
       
-      show(target,time){
-          return TweenMax
-          .from(target,duration,{
-              opacity:0,
-              height:0,
-              delay:time,
-              ease: Elastic.easeInOut.config(0.25,1),
-          })
-      }
+      
    alertClicked() {
     alert('You clicked the third ListGroupItem');
     }
@@ -94,11 +77,11 @@ class UsersList extends Component {
             <ListGroup>
             { this.state.users.map(user => <ListGroupItem className="userItem" data-delay={user.id} id={user.id}  key={user.id}>
                 <Link to={`/user/${user.id}`}>
-                    {user.name}
+                    {user.name} <i className="fas fa-eye"></i>
                     </Link>
             </ListGroupItem>)}
                 
-                    {/* <ListGroupItem  onClick={this.alertClicked}>Trigger an alert</ListGroupItem> */}
+                    {/* <ListGroupItem  onClick={this.alertClicked}>Trigger an alert</ListGroupItem> */} 
                 </ListGroup>
             </div>
             <div className="col-8">

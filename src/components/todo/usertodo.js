@@ -7,9 +7,7 @@ import { Button ,Badge } from 'react-bootstrap';
 
 class TodoItem extends React.Component  {
 
-    editar(){
-        // this.props.editing=true;
-    }
+  
     render(){
         return (
             <div className="UsersList container">
@@ -20,7 +18,7 @@ class TodoItem extends React.Component  {
                   <div className="col-6 text-left">
                      { !this.props.editing ?  <p><b>{this.props.title}</b></p> :
                      <div>
-                     <input onChange={()=>this.props.editingTodo(this.props)} value={this.props.tileprov} />
+                     <input  value={this.props.title} onChange={(e) => this.props.editingTodo(this.props)} />
                      </div>
                       }
                   </div>
@@ -40,11 +38,6 @@ class TodoItem extends React.Component  {
     }
     
 };
-// TodoItem.propTypes = {
-//     title: PropTypes.string,
-//     completed:PropTypes.bool,
-//     id: PropTypes.number,
-//     editing:PropTypes.bool
-// }
+
 
 export default TodoItem;

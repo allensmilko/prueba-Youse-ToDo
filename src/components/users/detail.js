@@ -11,10 +11,10 @@ const UserData = ({name,username,email,website}) => {
         <div className="row">
             <div className="col-12">
             <Panel>
-                <Panel.Heading>{name} ({username})</Panel.Heading>
+                <h1>{name} ({username})</h1>
                 <Panel.Body>
-                    <p><b>Email:</b> {email}</p>
-                    <p><b>Web site:</b> {website}</p>
+                    <p><b><i className="fas fa-envelope-square"></i></b> {email}</p>
+                    <a href={website} target="_blank"><b><i className="fas fa-globe"></i></b> {website}</a>
                 </Panel.Body>
             </Panel>
             </div>

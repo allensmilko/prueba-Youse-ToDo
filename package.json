@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "https://allensmilko.github.io/prueba-Youse-ToDo",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
     "axios": "^0.18.0",
     "gsap": "^2.0.1",
     "jquery": "^3.3.1",

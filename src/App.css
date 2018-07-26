@@ -9,8 +9,13 @@
   transition: .4s;
 }
 @keyframes startlogo {
-  from { position: absolute; }
-  to { position: relative; }
+  from { float: left;
+   transform: scale(1.6);
+    top: 20px;
+    left: 39px; 
+  }
+  to { float: none;
+   transform: scale(1); }
 }
 .App-logo:hover{
   transform: scale(1.2);
@@ -50,4 +55,13 @@
 .userItem:hover>a{
   color:#000;
   text-decoration: none;
+}
+.newTodo{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.newform{
+  width: 50%;
 }

@@ -5,6 +5,8 @@ import { Route, Link } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import UsersList from './views/users/list';
 import UserDetail from './views/users/detail';
+import { library } from '@fortawesome/fontawesome-svg-core'
+
 
 class App extends Component {
   render() {
