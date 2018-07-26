@@ -92,13 +92,13 @@ class UsersList extends Component {
         <div className="row">
             <div className="col-4">
             <ListGroup>
-            { this.state.users.map(user => <ListGroupItem className="userItem" id={user.id}  key={user.id}>
+            { this.state.users.map(user => <ListGroupItem className="userItem" data-delay={user.id} id={user.id}  key={user.id}>
                 <Link to={`/user/${user.id}`}>
                     {user.name}
                     </Link>
             </ListGroupItem>)}
                 
-                    {/* <ListGroupItem onClick={this.alertClicked}>Trigger an alert</ListGroupItem> */}
+                    {/* <ListGroupItem  onClick={this.alertClicked}>Trigger an alert</ListGroupItem> */}
                 </ListGroup>
             </div>
             <div className="col-8">

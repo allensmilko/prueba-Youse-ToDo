@@ -19,16 +19,20 @@ class TodoItem extends React.Component  {
                   </div>
                   <div className="col-6 text-left">
                      { !this.props.editing ?  <p><b>{this.props.title}</b></p> :
-                      <input />}
+                     <div>
+                     <input onChange={()=>this.props.editingTodo(this.props)} value={this.props.tileprov} />
+                     </div>
+                      }
                   </div>
                   <div className="col-1">
-                  <Button bsStyle="info" onClick={this.editar()} >Editar</Button>
+                 { !this.props.editing ? <Button bsStyle="info" onClick={()=>this.props.enableEdit(this.props)} >Editar</Button>:
+                  <Button bsStyle="success" onClick={()=>this.props.enableEdit(this.props)} >aceptar</Button>}
                   </div>
                   <div className="col-1">
-                  <Button bsStyle="danger">Borrar</Button>
+                  <Button bsStyle="danger" onClick={()=>this.props.deleteTodo(this.props)}>Borrar</Button>
                   </div>
                   <div className="col-1">
-                  { !this.props.completed ?  <Button bsStyle="success">Completar</Button> : null }
+                  { !this.props.completed ?  <Button bsStyle="success" onClick={()=>this.props.complete(this.props)}>Completar</Button> : null }
                   </div>
               </div>       
             </div>
