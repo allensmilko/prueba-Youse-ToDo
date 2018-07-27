@@ -4,11 +4,12 @@ Puede ver el sitio [oprimiendo click aqui](https://allensmilko.github.io/prueba-
 
 ## Indice
 
-- [Especificaciones del desarrollo](#especificaciones)
+- [Especificaciones del desarrollo](#Especificaciones-del-desarrollo)
 - [Instalación y despliegue](#instalacion-y-despliegue)
+- [Bugs](#bugs)
 
 
-## especificaciones
+## Especificaciones del desarrollo
 
 El desarrollo esta enfocado a una prueba de selección para desarrollador front-end contiene las siguientes caracteristicas:
 
