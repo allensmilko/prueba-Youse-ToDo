@@ -4,7 +4,7 @@ Puede ver el sitio [oprimiendo click aqui](https://allensmilko.github.io/prueba-
 
 ## Indice
 
-- [Especificaciones del desarrollo](#Especificaciones-del-desarrollo)
+- [Especificaciones del desarrollo](#especificaciones-del-desarrollo)
 - [Instalación y despliegue](#instalacion-y-despliegue)
 - [Bugs](#bugs)
 
