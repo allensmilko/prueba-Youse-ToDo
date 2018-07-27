@@ -1,6 +1,6 @@
 Este proyecto se realizo con [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Puede ver el sitio [oprimiendo click aqui](https://github.com/allensmilko/prueba-Youse-ToDo).
+Puede ver el sitio [oprimiendo click aqui](https://allensmilko.github.io/prueba-Youse-ToDo/).
 
 ## Indice
 
